@@ -1,0 +1,9 @@
+{
+  "name": "PB getInstalled",
+  "short_name": "PB getInst",
+  "related_applications": [{
+    "platform": "play",
+    "id": "com.pitchbook.mobile",
+    "url": "https://slavvkko.github.io"
+  }]
+}
