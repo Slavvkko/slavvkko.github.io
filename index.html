@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>PitchBook installation check</title>
     <link rel="manifest" href="/manifest.json">
-    <link rel="stylesheet" href="/style.css">
+    <style>
+        body, a {
+          font-family: Helvetica, Arial, sans-serif;
+          font-size: 20px;
+        }
+        p { clear: both; }
+        .hidden { display: none; }
+    </style>
+    <script src="/code.js"></script>
 </head>
 <body>
-<p id="requireHTTPS" class="hidden">
-    <b>STOP!</b> This page <b>must</b> be served over HTTPS.
-    Please <a>reload this page via HTTPS</a>.
-</p>
 
 <p id="notSupported" class="hidden">
-    <b>Sorry!</b> This browser doesn't support the <code>getInstalledRelatedApps</code>.
+    <b style="color: #b71c1c;">Sorry!</b> This browser doesn't support the <code>getInstalledRelatedApps</code>.
 </p>
 
-<div>
-    <b>Installed Apps:</b> <span id="status"></span>
-    <ul id="installedApps">
-    </ul>
-</div>
+<p id="status" style="font-weight: bold;"></p>
 
 <p>Links ----------</p>
 
@@ -37,6 +38,5 @@
         Microsoft Google Play Referrer browser_fallback_url
     </a>
 </p>
-<script src="/code.js"></script>
 </body>
 </html>
