@@ -1,9 +1,11 @@
+const status = document.getElementById('status');
+
 window.addEventListener('DOMContentLoaded', () => {
   // Check to see if the API is supported.
   if ('getInstalledRelatedApps' in navigator) {
     check();
   } else {
-    document.getElementById('notSupported').classList.remove('hidden');
+    status.innerText = "getInstalledRelatedApps not supported";
   }
 });
 
@@ -11,9 +13,9 @@ function check() {
   navigator.getInstalledRelatedApps().then((apps) => {
     const installed = apps.some((app) => app.platform === "play" && app.id === "com.pitchbook.mobile")
     if (installed) {
-      document.getElementById('status').innerText = "Installed";
+      status.innerText = "Installed";
     } else {
-      document.getElementById('status').innerText = "Not Installed";
+      status.innerText = "Not Installed";
     }
   });
 }
