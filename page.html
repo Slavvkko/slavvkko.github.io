@@ -2,15 +2,13 @@
 <html lang="en">
 <head>
     <title>Page</title>
-<!--    <script>-->
-<!--        addEventListener("load", () => {-->
-<!--            setTimeout(() => {-->
-<!--              window.location.href = "pitchbook2://page.html";-->
-<!--            }, 500);-->
-<!--        });-->
-<!--    </script>-->
     <script>
-        function click() {
+        addEventListener("load", () => {
+            setTimeout(() => {
+              window.location.href = "pitchbook2://page.html";
+            }, 500);
+        });
+        function onClick() {
             console.log("click");
             window.location.href = "pitchbook2://page.html";
         }
@@ -18,6 +16,6 @@
 </head>
 <body>
 <p><h1>Page</h1></p>
-<p><button onclick="click()">Click</button></p>
+<p><button onclick="onClick()">Click</button></p>
 </body>
 </html>
