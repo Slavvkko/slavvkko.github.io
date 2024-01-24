@@ -5,12 +5,13 @@
     <script>
         addEventListener("load", () => {
             setTimeout(() => {
-              window.location.href = "pitchbook2://page.html";
+              //window.location.href = "pitchbook2://page.html";
             }, 500);
         });
         function onClick() {
-            console.log("click");
-            window.location.href = "pitchbook2://page.html";
+            //console.log("click");
+            //window.location.href = "pitchbook2://page.html";
+            window.location = "android-app://com.pitchbook.mobile";
         }
     </script>
 </head>
@@ -18,7 +19,8 @@
 <p><h1>Page</h1></p>
 <p><button onclick="onClick()">Click</button></p>
 <script>
-    window.location.href = "pitchbook2://page.html";
+    //window.location.href = "pitchbook2://page.html";
+    window.location = "android-app://com.pitchbook.mobile";
 </script>
 </body>
 </html>
