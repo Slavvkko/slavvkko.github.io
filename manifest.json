@@ -1,4 +1,14 @@
 {
+  "short_name": "PitchBook",
+  "name": "PitchBook Smart App Banner",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "prefer_related_applications": true,
   "related_applications": [{
     "platform": "play",
     "id": "com.pitchbook.mobile"
