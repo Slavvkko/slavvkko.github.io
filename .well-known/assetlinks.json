@@ -1,0 +1,16 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.pitchbook.mobile",
+      "sha256_cert_fingerprints": [
+        "48:7C:7D:F4:D4:8A:CE:33:5E:CB:B7:5F:65:AB:DF:A9:2B:C6:E0:83:98:31:05:55:D9:2A:EC:F1:54:AF:8E:64",
+        "3F:51:4A:D1:12:D0:20:B3:F5:C7:86:C8:35:3B:B4:8F:FB:AB:A4:73:89:30:D7:9B:06:FF:DF:B0:29:3E:26:5D",
+        "5B:1B:3E:1D:16:D4:93:FD:DF:C4:9A:BD:81:13:E5:1B:37:50:B8:0A:F3:EE:4D:DC:B6:29:CE:6C:E7:D9:2A:DC"
+      ]
+    }
+  }
+]
